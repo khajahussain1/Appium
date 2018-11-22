@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression" parallel="tests">
+	<test name="Android">
+
+		<classes>
+			<class name="com.Appium.Khaja">
+				<methods>
+					<include name="test1">
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+
+</suite>
