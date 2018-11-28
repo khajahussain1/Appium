@@ -2,10 +2,10 @@
 <testng-results total="0" passed="0" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-11-22T05:06:27Z" name="Regression" finished-at="2018-11-22T05:06:27Z" duration-ms="9">
+  <suite started-at="2018-11-22T14:41:41Z" name="Regression" finished-at="2018-11-22T14:41:41Z" duration-ms="7">
     <groups>
     </groups>
-    <test started-at="2018-11-22T05:06:27Z" name="Android" finished-at="2018-11-22T05:06:27Z" duration-ms="9">
+    <test started-at="2018-11-22T14:41:41Z" name="Android" finished-at="2018-11-22T14:41:41Z" duration-ms="7">
     </test> <!-- Android -->
   </suite> <!-- Regression -->
 </testng-results>
