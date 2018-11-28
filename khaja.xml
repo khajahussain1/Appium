@@ -5,10 +5,6 @@
 
 		<classes>
 			<class name="com.Appium.Khaja">
-				<methods>
-					<include name="test1">
-					</include>
-				</methods>
 			</class>
 		</classes>
 	</test>

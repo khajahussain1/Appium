@@ -11,11 +11,12 @@
 	<name>Appium</name>
 	<url>http://maven.apache.org</url>
 
-	<!-- <properties> <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> 
-		</properties> -->
+	<properties>
+	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+</properties>
 
 	<build>
-		<sourceDirectory>src</sourceDirectory>
+		<!-- <sourceDirectory>src</sourceDirectory>
 		<resources>
 			<resource>
 				<directory>src</directory>
@@ -23,13 +24,13 @@
 					<exclude>**/*.java</exclude>
 				</excludes>
 			</resource>
-		</resources>
+		</resources>-->
 		<plugins>
-			<plugin>
+			<!-- <plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.0</version>
-			</plugin>
+			</plugin>  -->
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
