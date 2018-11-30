@@ -50,7 +50,7 @@ public class Tutorial6 {
 	 @AfterMethod
 	public void tearDown() {
 
-		driver.quit();
+		//driver.quit();
 	}
 
 	/*
