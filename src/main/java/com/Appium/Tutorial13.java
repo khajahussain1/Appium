@@ -10,18 +10,18 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 
 public class Tutorial13 {
 
-	AppiumDriver<MobileElement> driver;
+	//AppiumDriver<MobileElement> driver;
+	AndroidDriver<MobileElement> driver;
 	String path;
 
 	@BeforeMethod
 	public void setup() throws MalformedURLException {
-		System.out.println("Session is creating");
+		//System.out.println("Session is creating");
 		DesiredCapabilities cap = new DesiredCapabilities();
 		cap.setCapability("platformName", "Android");
 		cap.setCapability("deviceName", "HTC Desire 626 dual sim");
@@ -31,7 +31,7 @@ public class Tutorial13 {
 		driver = new AndroidDriver<MobileElement>(url, cap);
 
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		System.out.println("Session is created");
+		//System.out.println("Session is created");
 	}
 
 	@Test

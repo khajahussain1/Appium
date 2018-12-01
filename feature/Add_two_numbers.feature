@@ -1,6 +1,6 @@
 Feature: Add two numbers in calculator
 
-  @Sanity
+  @Sanity @Regresion
   Scenario: Add two numbers in calculator
     Given Launch the application in mobile "native"
     Then Click on number seven
