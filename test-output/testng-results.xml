@@ -2,48 +2,32 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="46462" started-at="2018-11-30T05:15:57Z" finished-at="2018-11-30T05:16:44Z">
+  <suite name="Default suite" duration-ms="21292" started-at="2018-12-01T11:53:49Z" finished-at="2018-12-01T11:54:10Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.Appium.testrunner.Add_two_number@5ec0a365]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.Appium.testrunner.Webapp@5ec0a365]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="46462" started-at="2018-11-30T05:15:57Z" finished-at="2018-11-30T05:16:44Z">
-      <class name="com.Appium.testrunner.Add_two_number">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.Appium.testrunner.Add_two_number@5ec0a365]" name="setUpClass" is-config="true" duration-ms="580" started-at="2018-11-30T10:45:57Z" finished-at="2018-11-30T10:45:58Z">
+    <test name="Default test" duration-ms="21292" started-at="2018-12-01T11:53:49Z" finished-at="2018-12-01T11:54:10Z">
+      <class name="com.Appium.testrunner.Webapp">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.Appium.testrunner.Webapp@5ec0a365]" name="setUpClass" is-config="true" duration-ms="471" started-at="2018-12-01T17:23:49Z" finished-at="2018-12-01T17:23:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.Appium.testrunner.Add_two_number@5ec0a365]" name="feature" duration-ms="44459" started-at="2018-11-30T10:45:58Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-11-30T10:46:43Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.Appium.testrunner.Webapp@5ec0a365]" name="feature" duration-ms="19426" started-at="2018-12-01T17:23:50Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-12-01T17:24:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Add two numbers in calculator]]>
+                <![CDATA[Launch the web app]]>
               </value>
             </param>
           </params>
           <exception class="cucumber.runtime.CucumberException">
             <message>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: Locator Strategy 'name' is not supported for this session (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
-System info: host: 'DESKTOP-T7322OL', ip: '192.168.9.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{appPackage=com.android.calculator2, deviceScreenSize=720x1280, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=LC62TYT08029, platform=LINUX, deviceUDID=LC62TYT08029, appActivity=com.android.calculator2.Calculator, desired={appPackage=com.android.calculator2, appActivity=com.android.calculator2.Calculator, platformName=Android, deviceName=HTC Desire 626 dual sim}, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=HTC Desire 626 dual sim, platformName=Android, deviceManufacturer=HTC}]
-Session ID: c9e48d64-71b8-4d1f-a686-9ff934d7ac14
-*** Element info: {Using=name, value=plusbutton}]]>
+              <![CDATA[java.lang.NullPointerException]]>
             </message>
             <full-stacktrace>
-              <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.InvalidSelectorException: Locator Strategy 'name' is not supported for this session (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
-System info: host: 'DESKTOP-T7322OL', ip: '192.168.9.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{appPackage=com.android.calculator2, deviceScreenSize=720x1280, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=LC62TYT08029, platform=LINUX, deviceUDID=LC62TYT08029, appActivity=com.android.calculator2.Calculator, desired={appPackage=com.android.calculator2, appActivity=com.android.calculator2.Calculator, platformName=Android, deviceName=HTC Desire 626 dual sim}, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=HTC Desire 626 dual sim, platformName=Android, deviceManufacturer=HTC}]
-Session ID: c9e48d64-71b8-4d1f-a686-9ff934d7ac14
-*** Element info: {Using=name, value=plusbutton}
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.NullPointerException
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -70,60 +54,28 @@ Session ID: c9e48d64-71b8-4d1f-a686-9ff934d7ac14
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.InvalidSelectorException: Locator Strategy 'name' is not supported for this session (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
-System info: host: 'DESKTOP-T7322OL', ip: '192.168.9.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{appPackage=com.android.calculator2, deviceScreenSize=720x1280, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=LC62TYT08029, platform=LINUX, deviceUDID=LC62TYT08029, appActivity=com.android.calculator2.Calculator, desired={appPackage=com.android.calculator2, appActivity=com.android.calculator2.Calculator, platformName=Android, deviceName=HTC Desire 626 dual sim}, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=HTC Desire 626 dual sim, platformName=Android, deviceManufacturer=HTC}]
-Session ID: c9e48d64-71b8-4d1f-a686-9ff934d7ac14
-*** Element info: {Using=name, value=plusbutton}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:461)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByName(DefaultGenericMobileDriver.java:104)
-	at io.appium.java_client.AppiumDriver.findElementByName(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByName(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByName.findElement(By.java:303)
-	at org.openqa.selenium.support.ByIdOrName.findElement(ByIdOrName.java:50)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+Caused by: java.lang.NullPointerException
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy16.click(Unknown Source)
-	at com.Appium.pageobjects.Add_two_numbers.plus_button(Add_two_numbers.java:47)
-	at com.Appium.stepdefination.Stepdefination.click_on_plus_button(Stepdefination.java:35)
-	at ✽.Then click on plus button(./feature/Add_two_numbers.feature:7)
+	at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
+	at com.Appium.pageobjects.Webapp.text_box(Webapp.java:31)
+	at com.Appium.stepdefination.Stepdefination.pass_the_value_as(Stepdefination.java:50)
+	at ✽.Then Pass the value as "appium"(./feature/Webapp.feature:6)
 ]]>
             </full-stacktrace>
           </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.Appium.testrunner.Add_two_number@5ec0a365]" name="setup" is-config="true" duration-ms="313" started-at="2018-11-30T10:46:43Z" finished-at="2018-11-30T10:46:43Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.Appium.testrunner.Webapp@5ec0a365]" name="setup" is-config="true" duration-ms="341" started-at="2018-12-01T17:24:09Z" finished-at="2018-12-01T17:24:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.Appium.testrunner.Add_two_number@5ec0a365]" name="tearDownClass" is-config="true" duration-ms="846" started-at="2018-11-30T10:46:43Z" finished-at="2018-11-30T10:46:44Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.Appium.testrunner.Webapp@5ec0a365]" name="tearDownClass" is-config="true" duration-ms="843" started-at="2018-12-01T17:24:09Z" finished-at="2018-12-01T17:24:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- com.Appium.testrunner.Add_two_number -->
+      </class> <!-- com.Appium.testrunner.Webapp -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Hussain\AppData\Local\Temp\testng-eclipse-1397050258\testng-customsuite.xml</span>
+                    <span>C:\Users\Hussain\AppData\Local\Temp\testng-eclipse--899353848\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -101,7 +101,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.Appium.testrunner.Add_two_number" hash-for-method="feature(Add two numbers in calculator)">feature(Add two numbers in calculator)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.Appium.testrunner.Webapp" hash-for-method="feature(Launch the web app)">feature(Launch the web app)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -119,24 +119,16 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.Appium.testrunner.Add_two_number</span>
+              <span class="class-name">com.Appium.testrunner.Webapp</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="feature(Add two numbers in calculator)">
-                  </a> <!-- feature(Add two numbers in calculator) -->
+                  <a name="feature(Launch the web app)">
+                  </a> <!-- feature(Launch the web app) -->
                   <span class="method-name">feature</span>
-                  <span class="parameters">(Add two numbers in calculator)</span>
-                  <div class="stack-trace">cucumber.runtime.CucumberException: org.openqa.selenium.InvalidSelectorException: Locator Strategy &apos;name&apos; is not supported for this session (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
-System info: host: &apos;DESKTOP-T7322OL&apos;, ip: &apos;192.168.9.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_192&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{appPackage=com.android.calculator2, deviceScreenSize=720x1280, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=LC62TYT08029, platform=LINUX, deviceUDID=LC62TYT08029, appActivity=com.android.calculator2.Calculator, desired={appPackage=com.android.calculator2, appActivity=com.android.calculator2.Calculator, platformName=Android, deviceName=HTC Desire 626 dual sim}, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=HTC Desire 626 dual sim, platformName=Android, deviceManufacturer=HTC}]
-Session ID: c9e48d64-71b8-4d1f-a686-9ff934d7ac14
-*** Element info: {Using=name, value=plusbutton}
+                  <span class="parameters">(Launch the web app)</span>
+                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.NullPointerException
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -163,45 +155,13 @@ Session ID: c9e48d64-71b8-4d1f-a686-9ff934d7ac14
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.InvalidSelectorException: Locator Strategy &apos;name&apos; is not supported for this session (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
-System info: host: &apos;DESKTOP-T7322OL&apos;, ip: &apos;192.168.9.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_192&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{appPackage=com.android.calculator2, deviceScreenSize=720x1280, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=LC62TYT08029, platform=LINUX, deviceUDID=LC62TYT08029, appActivity=com.android.calculator2.Calculator, desired={appPackage=com.android.calculator2, appActivity=com.android.calculator2.Calculator, platformName=Android, deviceName=HTC Desire 626 dual sim}, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=HTC Desire 626 dual sim, platformName=Android, deviceManufacturer=HTC}]
-Session ID: c9e48d64-71b8-4d1f-a686-9ff934d7ac14
-*** Element info: {Using=name, value=plusbutton}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:461)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByName(DefaultGenericMobileDriver.java:104)
-	at io.appium.java_client.AppiumDriver.findElementByName(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByName(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByName.findElement(By.java:303)
-	at org.openqa.selenium.support.ByIdOrName.findElement(ByIdOrName.java:50)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+Caused by: java.lang.NullPointerException
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy16.click(Unknown Source)
-	at com.Appium.pageobjects.Add_two_numbers.plus_button(Add_two_numbers.java:47)
-	at com.Appium.stepdefination.Stepdefination.click_on_plus_button(Stepdefination.java:35)
-	at ✽.Then click on plus button(./feature/Add_two_numbers.feature:7)
+	at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
+	at com.Appium.pageobjects.Webapp.text_box(Webapp.java:31)
+	at com.Appium.stepdefination.Stepdefination.pass_the_value_as(Stepdefination.java:50)
+	at ✽.Then Pass the value as &quot;appium&quot;(./feature/Webapp.feature:6)
 
 </div> <!-- stack-trace -->
                   <em>
@@ -213,7 +173,7 @@ Session ID: c9e48d64-71b8-4d1f-a686-9ff934d7ac14
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Hussain\AppData\Local\Temp\testng-eclipse-1397050258\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Hussain\AppData\Local\Temp\testng-eclipse--899353848\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -222,7 +182,7 @@ Session ID: c9e48d64-71b8-4d1f-a686-9ff934d7ac14
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.Appium.testrunner.Add_two_number&quot;/&gt;
+      &lt;class name=&quot;com.Appium.testrunner.Webapp&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -273,13 +233,13 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
-data.setCell(0, 2, 'com.Appium.testrunner.Add_two_number')
-data.setCell(0, 3, 44459);
+data.setCell(0, 2, 'com.Appium.testrunner.Webapp')
+data.setCell(0, 3, 19426);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 44 seconds</span>
+              <span class="suite-total-time">Total running time: 19 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -305,7 +265,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.Appium.testrunner.Add_two_number</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.Appium.testrunner.Webapp</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
                 <span class="method-start">0 ms</span>
@@ -313,16 +273,16 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">feature(Add two numbers in calculator)</span>
-                <span class="method-start">791 ms</span>
+                <span class="method-name">feature(Launch the web app)</span>
+                <span class="method-start">648 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">setup</span>
-                <span class="method-start">45266 ms</span>
+                <span class="method-start">20085 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">45579 ms</span>
+                <span class="method-start">20426 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

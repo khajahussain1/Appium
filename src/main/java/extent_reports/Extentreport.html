@@ -53,7 +53,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Nov 30, 2018 10:45:58 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Dec 1, 2018 05:23:50 PM</span>
 				</a>
 			</li>
 			<li>
@@ -80,7 +80,6 @@
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
 						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
-						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -171,10 +170,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='40%'><span class='strong'>2</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>1</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='20%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='40%'>2</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='50%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -190,8 +189,8 @@
 				
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Add two numbers in calculator</span>
-						<span class='test-time'>Nov 30, 2018 10:45:58 AM</span>
+						<span class='test-name'>Launch the web app</span>
+						<span class='test-time'>Dec 1, 2018 05:23:50 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
@@ -199,89 +198,33 @@
 	<div class='category-list'>
 		<span class='category label white-text'>@Sanity</span>
 	</div>
-	<span class='duration right label'>0h 0m 44s+37ms</span>
+	<span class='duration right label'>0h 0m 19s+19ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
-		<span class="desc-text">Add two numbers in calculator</span>
+		<span class="desc-text">Launch the web app</span>
 	</div>
 	<ul class='steps'>
 		<li test-id='3' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
-			<span class="bdd-step-name">Given Launch the application in mobile "native"</span>
+			<span class="bdd-step-name">Given Launch the application in mobile "chrome"</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='4' class='node then pass' status='pass'>
+		<li test-id='4' class='node then fail' status='fail'>
 			
 			<b>Then</b>
 			
-			<span class="bdd-step-name">Then Click on number seven</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='5' class='node then fail' status='fail'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then click on plus button</span>
-				<div class='pre'><pre>org.openqa.selenium.InvalidSelectorException: Locator Strategy 'name' is not supported for this session (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
-System info: host: 'DESKTOP-T7322OL', ip: '192.168.9.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{appPackage=com.android.calculator2, deviceScreenSize=720x1280, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=LC62TYT08029, platform=LINUX, deviceUDID=LC62TYT08029, appActivity=com.android.calculator2.Calculator, desired={appPackage=com.android.calculator2, appActivity=com.android.calculator2.Calculator, platformName=Android, deviceName=HTC Desire 626 dual sim}, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=HTC Desire 626 dual sim, platformName=Android, deviceManufacturer=HTC}]
-Session ID: c9e48d64-71b8-4d1f-a686-9ff934d7ac14
-*** Element info: {Using=name, value=plusbutton}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:461)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByName(DefaultGenericMobileDriver.java:104)
-	at io.appium.java_client.AppiumDriver.findElementByName(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByName(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByName.findElement(By.java:303)
-	at org.openqa.selenium.support.ByIdOrName.findElement(ByIdOrName.java:50)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+			<span class="bdd-step-name">Then Pass the value as "appium"</span>
+				<div class='pre'><pre>java.lang.NullPointerException
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy16.click(Unknown Source)
-	at com.Appium.pageobjects.Add_two_numbers.plus_button(Add_two_numbers.java:47)
-	at com.Appium.stepdefination.Stepdefination.click_on_plus_button(Stepdefination.java:35)
-	at ?.Then click on plus button(./feature/Add_two_numbers.feature:7)
+	at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
+	at com.Appium.pageobjects.Webapp.text_box(Webapp.java:31)
+	at com.Appium.stepdefination.Stepdefination.pass_the_value_as(Stepdefination.java:50)
+	at ?.Then Pass the value as "appium"(./feature/Webapp.feature:6)
 </pre></div>
-			
-		</li>
-		<li test-id='6' class='node then skip' status='skip'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then click on number two</span>
-				<div class='pre'>skipped</div>
-			
-		</li>
-		<li test-id='7' class='node then skip' status='skip'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then Click on equal button</span>
-				<div class='pre'>skipped</div>
 			
 		</li>
 	</ul>
@@ -363,8 +306,8 @@ Session ID: c9e48d64-71b8-4d1f-a686-9ff934d7ac14
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nov 30, 2018 10:45:58 AM</td>
-										<td class='linked' test-id='2'>Add two numbers in calculator.Add two numbers in calculator</td>
+										<td>Dec 1, 2018 05:23:50 PM</td>
+										<td class='linked' test-id='2'>Launch the web app.Launch the web app</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
@@ -411,7 +354,7 @@ Session ID: c9e48d64-71b8-4d1f-a686-9ff934d7ac14
 
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
-                                <span class='exception-name'>org.openqa.selenium.InvalidSelectorException</span>
+                                <span class='exception-name'>java.lang.NullPointerException</span>
                                 <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
                             </div>
                             <div class='exception-content hide'>
@@ -426,47 +369,15 @@ Session ID: c9e48d64-71b8-4d1f-a686-9ff934d7ac14
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Nov 30, 2018 10:46:12 AM</td>
-                                                        <td class='linked' test-id='5'>Add two numbers in calculator.Add two numbers in calculator.Then click on plus button</td>
-                                                        <td><pre><pre>org.openqa.selenium.InvalidSelectorException: Locator Strategy 'name' is not supported for this session (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 20 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
-System info: host: 'DESKTOP-T7322OL', ip: '192.168.9.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{appPackage=com.android.calculator2, deviceScreenSize=720x1280, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=LC62TYT08029, platform=LINUX, deviceUDID=LC62TYT08029, appActivity=com.android.calculator2.Calculator, desired={appPackage=com.android.calculator2, appActivity=com.android.calculator2.Calculator, platformName=Android, deviceName=HTC Desire 626 dual sim}, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=HTC Desire 626 dual sim, platformName=Android, deviceManufacturer=HTC}]
-Session ID: c9e48d64-71b8-4d1f-a686-9ff934d7ac14
-*** Element info: {Using=name, value=plusbutton}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:461)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByName(DefaultGenericMobileDriver.java:104)
-	at io.appium.java_client.AppiumDriver.findElementByName(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByName(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByName.findElement(By.java:303)
-	at org.openqa.selenium.support.ByIdOrName.findElement(ByIdOrName.java:50)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+                                                        <td>Dec 1, 2018 05:24:09 PM</td>
+                                                        <td class='linked' test-id='4'>Launch the web app.Launch the web app.Then Pass the value as "appium"</td>
+                                                        <td><pre><pre>java.lang.NullPointerException
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy16.click(Unknown Source)
-	at com.Appium.pageobjects.Add_two_numbers.plus_button(Add_two_numbers.java:47)
-	at com.Appium.stepdefination.Stepdefination.click_on_plus_button(Stepdefination.java:35)
-	at ?.Then click on plus button(./feature/Add_two_numbers.feature:7)
+	at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
+	at com.Appium.pageobjects.Webapp.text_box(Webapp.java:31)
+	at com.Appium.stepdefination.Stepdefination.pass_the_value_as(Stepdefination.java:50)
+	at ?.Then Pass the value as "appium"(./feature/Webapp.feature:6)
 </pre></pre></td>
                                                     </tr>
                                         </tbody>
@@ -505,25 +416,25 @@ Session ID: c9e48d64-71b8-4d1f-a686-9ff934d7ac14
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>5</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Nov 30, 2018 10:45:58 AM</div>
+					<div class='panel-lead'>Dec 1, 2018 05:23:50 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Nov 30, 2018 10:46:43 AM</div>
+			 		<div class='panel-lead'>Dec 1, 2018 05:24:09 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>44,577ms</div>
+					<div class='panel-lead'>19,594ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -573,14 +484,14 @@ Session ID: c9e48d64-71b8-4d1f-a686-9ff934d7ac14
 				infoChild: 0,
 				exceptionsChild: 1,
 				
-				passGrandChild: 2,
+				passGrandChild: 1,
 				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 2,
+				skipGrandChild: 0,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 3,
+				exceptionsGrandChild: 1,
 			};
 		</script>
 		
