@@ -46,8 +46,9 @@ public class Tutorial9 {
 		driver.findElementByXPath("//android.widget.Button[@resource-id='com.android.calculator2:id/equal']").click();
 		
 		//driver.findElementByXPath("//*[@text='=']").click();
+		driver.findElementByXPath("//android.widget.Button[@resource-id='com.android.calculator2:id/equal']");
 		
-		String text = driver.findElementByXPath("//android.widget.EditText[@index='0']").getText();
+		String text = driver.findElementByXPath("//android.widget.EditText[@text='9']").getText();
 		if(text.equals("9"))
 		{
 			System.out.println("Passed");

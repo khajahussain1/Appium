@@ -47,8 +47,8 @@ public class Stepdefination {
 
 	@Then("^Pass the value as \"([^\"]*)\"$")
 	public void pass_the_value_as(String appium) throws InterruptedException {
-		//webapp.text_box(appium);
-		driver.findElementByName("q").sendKeys("appium");
+		webapp.text_box(appium);
+		//driver.findElementByName("q").sendKeys("appium");
 		Thread.sleep(2000);
 	}
 

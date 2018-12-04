@@ -45,7 +45,7 @@
 	<classpathentry kind="lib" path="libs/selenium-2.53.1/libs/testng-6.9.9.jar"/>
 	<classpathentry kind="lib" path="libs/selenium-2.53.1/selenium-java-2.53.1.jar"/>
 	<classpathentry kind="lib" path="libs/commons-validator-1.6.jar"/>
-	<classpathentry kind="lib" path="libs/java-client-4.1.2.jar"/>
 	<classpathentry kind="lib" path="libs/selenium-server-standalone-2.53.1.jar"/>
+	<classpathentry kind="lib" path="libs/java-client-4.1.2.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

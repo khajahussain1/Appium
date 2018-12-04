@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Hussain\AppData\Local\Temp\testng-eclipse-1264815811\testng-customsuite.xml</span>
+                    <span>C:\Users\Hussain\AppData\Local\Temp\testng-eclipse--899353848\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -156,7 +156,11 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 Caused by: java.lang.NullPointerException
-	at com.Appium.stepdefination.Stepdefination.pass_the_value_as(Stepdefination.java:51)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
+	at com.Appium.pageobjects.Webapp.text_box(Webapp.java:31)
+	at com.Appium.stepdefination.Stepdefination.pass_the_value_as(Stepdefination.java:50)
 	at ✽.Then Pass the value as &quot;appium&quot;(./feature/Webapp.feature:6)
 
 </div> <!-- stack-trace -->
@@ -169,7 +173,7 @@ Caused by: java.lang.NullPointerException
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Hussain\AppData\Local\Temp\testng-eclipse-1264815811\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Hussain\AppData\Local\Temp\testng-eclipse--899353848\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -230,12 +234,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
 data.setCell(0, 2, 'com.Appium.testrunner.Webapp')
-data.setCell(0, 3, 21750);
+data.setCell(0, 3, 19426);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 seconds</span>
+              <span class="suite-total-time">Total running time: 19 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -270,15 +274,15 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">feature(Launch the web app)</span>
-                <span class="method-start">621 ms</span>
+                <span class="method-start">648 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">setup</span>
-                <span class="method-start">22381 ms</span>
+                <span class="method-start">20085 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">22714 ms</span>
+                <span class="method-start">20426 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

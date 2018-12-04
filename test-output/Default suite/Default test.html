@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Dec 01 14:22:37 IST 2018</td>
+<td>Started on:</td><td>Sat Dec 01 17:23:49 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>23 seconds (23552 ms)</td>
+<tr><td>Total time:</td><td>21 seconds (21292 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -104,7 +104,11 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 Caused by: java.lang.NullPointerException
-	at com.Appium.stepdefination.Stepdefination.pass_the_value_as(Stepdefination.java:51)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
+	at com.Appium.pageobjects.Webapp.text_box(Webapp.java:31)
+	at com.Appium.stepdefination.Stepdefination.pass_the_value_as(Stepdefination.java:50)
 	at ?.Then Pass the value as &quot;appium&quot;(./feature/Webapp.feature:6)
 </pre></div><a href='#' onClick='toggleBox("stack-trace478182173", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
 <div class='stack-trace' id='stack-trace478182173'><pre>cucumber.runtime.CucumberException: java.lang.NullPointerException
@@ -135,10 +139,14 @@ Caused by: java.lang.NullPointerException
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 Caused by: java.lang.NullPointerException
-	at com.Appium.stepdefination.Stepdefination.pass_the_value_as(Stepdefination.java:51)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
+	at com.Appium.pageobjects.Webapp.text_box(Webapp.java:31)
+	at com.Appium.stepdefination.Stepdefination.pass_the_value_as(Stepdefination.java:50)
 	at ?.Then Pass the value as &quot;appium&quot;(./feature/Webapp.feature:6)
 </pre></div></td>
-<td>21</td>
+<td>19</td>
 <td>com.Appium.testrunner.Webapp@5ec0a365</td></tr>
 </table><p>
 </body>

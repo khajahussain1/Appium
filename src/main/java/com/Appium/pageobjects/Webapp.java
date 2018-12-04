@@ -1,5 +1,6 @@
 package com.Appium.pageobjects;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -12,6 +13,8 @@ public class Webapp {
 	
 	public AppiumDriver<MobileElement> driver;
 	
+	//WebDriver driver;
+	
 	public Webapp(AppiumDriver<MobileElement> driver)
 	{
 		this.driver=driver;
@@ -19,14 +22,14 @@ public class Webapp {
 		
 	}
 	
-	@FindBy(xpath="//input[@id='q']")
-	@AndroidFindBy(xpath="//*[@id='q']")
+	@FindBy(name="q")
+	@AndroidFindBy(xpath="//input[@id='q']")
 	public WebElement txetbox;
 	
 	public void text_box(String appium)
 	{
-		//txetbox.sendKeys(appium);
-		driver.findElementByName("q").sendKeys("appium");
+		txetbox.sendKeys(appium);
+		driver.findElementByXPath("//input[@id='q']").sendKeys("appium");
 	}
 
 }
