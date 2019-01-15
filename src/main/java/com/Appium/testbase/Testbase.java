@@ -1,10 +1,12 @@
 package com.Appium.testbase;
 
+import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import io.appium.java_client.AppiumDriver;
@@ -16,6 +18,7 @@ public class Testbase {
 	public static AppiumDriver<MobileElement> driver;
 	//public static AndroidDriver<MobileElement> driver;
 
+	
 	public static void launchapp(String apptype) throws MalformedURLException {
 		if (apptype.equals("native")) {
 			DesiredCapabilities cap = new DesiredCapabilities();
@@ -65,5 +68,9 @@ public class Testbase {
 		driver.swipe(x, starty, x, endy, 500);
 
 	}
+	
+	
+	
+	
 
 }

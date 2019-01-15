@@ -1,7 +1,6 @@
 package com.Appium.stepdefination;
 
 import com.Appium.pageobjects.Add_two_numbers;
-import com.Appium.pageobjects.Verticalswip;
 import com.Appium.pageobjects.Webapp;
 import com.Appium.testbase.Testbase;
 
@@ -14,12 +13,13 @@ public class Stepdefination {
 
 	public AppiumDriver<MobileElement> driver;
 
+	Hooks hooks;
 	Add_two_numbers twonumbers;
 	Webapp webapp = new Webapp(Testbase.driver);
-	Verticalswip verswip;
 
 	@Given("^Launch the application in mobile \"([^\"]*)\"$")
 	public void launch_the_application_in_mobile(String apptype) throws Throwable {
+		//hooks.beforeScenario(apptype);
 		Testbase.launchapp(apptype);
 	}
 
@@ -52,10 +52,6 @@ public class Stepdefination {
 		Thread.sleep(2000);
 	}
 
-	@Then("^clickTab$")
-	public void clicktab() {
-		verswip = new Verticalswip(Testbase.driver);
-		verswip.setviews();
-	}
+	
 
 }
