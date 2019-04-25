@@ -7,12 +7,11 @@ import java.net.MalformedURLException;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.lift.TestContext;
 
 import com.Appium.testbase.Testbase;
 import com.cucumber.listener.Reporter;
 import com.google.common.io.Files;
+
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -37,7 +36,7 @@ public class Hooks {
 		if (scenario.isFailed()) {
 			String screenshotName = scenario.getName().replaceAll(" ", "_");
 			try {
-				File sourcePath = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+				File sourcePath = ((TakesScreenshot)Testbase.driver).getScreenshotAs(OutputType.FILE);
 				
 				File destinationPath = new File(System.getProperty("user.dir") + "/target/cucumber-reports/screenshots/" + screenshotName + ".png");
 				

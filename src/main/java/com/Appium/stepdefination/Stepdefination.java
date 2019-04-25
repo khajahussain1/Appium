@@ -3,6 +3,8 @@ package com.Appium.stepdefination;
 import com.Appium.pageobjects.Add_two_numbers;
 import com.Appium.pageobjects.Webapp;
 import com.Appium.testbase.Testbase;
+import com.Appium.utility.ConfigFileReader;
+import com.Appium.utility.PageObjectManager;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -13,14 +15,18 @@ public class Stepdefination {
 
 	public AppiumDriver<MobileElement> driver;
 
-	Hooks hooks;
-	Add_two_numbers twonumbers;
-	Webapp webapp = new Webapp(Testbase.driver);
+	 Add_two_numbers twonumbers;
+	 Webapp webapp;
+	 PageObjectManager pageObjectManager;
+	 ConfigFileReader configFileReader;
 
 	@Given("^Launch the application in mobile \"([^\"]*)\"$")
 	public void launch_the_application_in_mobile(String apptype) throws Throwable {
-		//hooks.beforeScenario(apptype);
+		configFileReader= new ConfigFileReader();
 		Testbase.launchapp(apptype);
+		pageObjectManager = new PageObjectManager(driver);
+		twonumbers = pageObjectManager.gettwonumbers();
+			
 	}
 
 	@Then("^Click on number seven$")
@@ -48,7 +54,6 @@ public class Stepdefination {
 	@Then("^Pass the value as \"([^\"]*)\"$")
 	public void pass_the_value_as(String appium) throws InterruptedException {
 		webapp.text_box(appium);
-		//driver.findElementByName("q").sendKeys("appium");
 		Thread.sleep(2000);
 	}
 
