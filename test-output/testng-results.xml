@@ -2,38 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21441" started-at="2018-12-15T11:47:22Z" finished-at="2018-12-15T11:47:43Z">
+  <suite name="Default suite" duration-ms="20008" started-at="2019-09-19T15:38:49Z" finished-at="2019-09-19T15:39:09Z">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.Appium.testrunner.Add_two_number@5ec0a365]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="21441" started-at="2018-12-15T11:47:22Z" finished-at="2018-12-15T11:47:43Z">
-      <class name="com.Appium.testrunner.Add_two_number">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.Appium.testrunner.Add_two_number@5ec0a365]" name="setUpClass" is-config="true" duration-ms="483" started-at="2018-12-15T17:17:22Z" finished-at="2018-12-15T17:17:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.Appium.testrunner.Add_two_number@5ec0a365]" name="feature" duration-ms="19744" started-at="2018-12-15T17:17:22Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-12-15T17:17:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Add two numbers in calculator]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.Appium.testrunner.Add_two_number@5ec0a365]" name="setup" is-config="true" duration-ms="74" started-at="2018-12-15T17:17:42Z" finished-at="2018-12-15T17:17:42Z">
+    <test name="Default test" duration-ms="20008" started-at="2019-09-19T15:38:49Z" finished-at="2019-09-19T15:39:09Z">
+      <class name="com.Appium.Tutorial12">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.Appium.Tutorial12@1d16f93d]" name="setup" is-config="true" duration-ms="12900" started-at="2019-09-19T21:08:49Z" finished-at="2019-09-19T21:09:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.Appium.testrunner.Add_two_number@5ec0a365]" name="tearDownClass" is-config="true" duration-ms="939" started-at="2018-12-15T17:17:42Z" finished-at="2018-12-15T17:17:43Z">
+        <test-method status="PASS" signature="clickTab()[pri:0, instance:com.Appium.Tutorial12@1d16f93d]" name="clickTab" duration-ms="5701" started-at="2019-09-19T21:09:01Z" finished-at="2019-09-19T21:09:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- com.Appium.testrunner.Add_two_number -->
+        </test-method> <!-- clickTab -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.Appium.Tutorial12@1d16f93d]" name="teardown" is-config="true" duration-ms="1346" started-at="2019-09-19T21:09:07Z" finished-at="2019-09-19T21:09:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.Appium.Tutorial12 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

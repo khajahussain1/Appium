@@ -26,7 +26,7 @@ public class Tutorial12 {
 		System.out.println("Session is creating");
 		DesiredCapabilities cap = new DesiredCapabilities();
 		cap.setCapability("platformName", "Android");
-		cap.setCapability("deviceName", "Nexus 9");
+		cap.setCapability("deviceName", "realme 3 Pro");
 		cap.setCapability("app", System.getProperty("user.dir") + "/app/ApiDemos.apk");
 		URL url = new URL("http://0.0.0.0:4723/wd/hub");
 

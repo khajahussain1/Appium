@@ -25,7 +25,7 @@ public class Tutorial6 {
 		System.out.println("Session is creating");
 		DesiredCapabilities cap = new DesiredCapabilities();
 		cap.setCapability("platformName", "Android");
-		cap.setCapability("deviceName", "HTC Desire 626 dual sim");
+		cap.setCapability("deviceName", "realme 3 Pro");
 
 		cap.setCapability("app", System.getProperty("user.dir") + "/app/ApiDemos.apk");
 		System.out.println(System.getProperty("user.dir") + "/app/ApiDemos.apk");

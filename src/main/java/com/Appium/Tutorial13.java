@@ -24,7 +24,7 @@ public class Tutorial13 {
 		//System.out.println("Session is creating");
 		DesiredCapabilities cap = new DesiredCapabilities();
 		cap.setCapability("platformName", "Android");
-		cap.setCapability("deviceName", "HTC Desire 626 dual sim");
+		cap.setCapability("deviceName", "realme 3 Pro");
 		cap.setCapability("app", System.getProperty("user.dir") + "/app/ApiDemos.apk");
 		URL url = new URL("http://0.0.0.0:4723/wd/hub");
 

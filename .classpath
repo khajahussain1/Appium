@@ -47,5 +47,6 @@
 	<classpathentry kind="lib" path="libs/commons-validator-1.6.jar"/>
 	<classpathentry kind="lib" path="libs/selenium-server-standalone-2.53.1.jar"/>
 	<classpathentry kind="lib" path="libs/java-client-4.1.2.jar"/>
+	<classpathentry kind="lib" path="src/test/resources/device.jar" sourcepath="src/test/resources/device.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
